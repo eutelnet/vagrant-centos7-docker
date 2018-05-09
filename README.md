@@ -5,6 +5,18 @@ Includes latest offical documentation to install Docker-CE from their website ht
 Installs docker-compose using PIP
 
 Instance is running on predefined IP 192.168.33.10
+
+Checkout repo to your desired location
+
+Whole working directory will be mounted to /vagrant
+
+To start simply run
+```
+vagrant up
+```
+
+When executing your docker commands bare in mind to use **sudo**
+
 ```
 [vagrant@vagrant ~]$ ip addr
 1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN qlen 1
@@ -29,18 +41,7 @@ Instance is running on predefined IP 192.168.33.10
     link/ether 02:42:b5:39:32:e7 brd ff:ff:ff:ff:ff:ff
     inet 172.17.0.1/16 brd 172.17.255.255 scope global docker0
        valid_lft forever preferred_lft forever
-
-
-
-Checkout repo to your desired location
-
-Whole working directory will be mounted to /vagrant
-
-To start simply run
 ```
-vagrant up
-
-When executing your docker commands bare in mind to use **sudo**
 
 ```
 [vagrant@vagrant ~]$ sudo docker version
