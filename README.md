@@ -12,13 +12,15 @@ Whole working directory will be mounted to /vagrant
 
 To start simply run
 ```
-vagrant up
+$ vagrant up
 ```
 
 When executing your docker commands bare in mind to use **sudo**
 
 ```
-[vagrant@vagrant ~]$ ip addr
+$ ip addr
+```
+```
 1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN qlen 1
     link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
     inet 127.0.0.1/8 scope host lo
@@ -44,7 +46,9 @@ When executing your docker commands bare in mind to use **sudo**
 ```
 
 ```
-[vagrant@vagrant ~]$ sudo docker version
+$ sudo docker version
+```
+```
 Client:
  Version:      18.03.1-ce
  API version:  1.37
